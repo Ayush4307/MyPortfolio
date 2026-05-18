@@ -10,6 +10,14 @@
     return;
   }
 
+  const avatar = document.getElementById("avatar");
+  const profileImage = document.getElementById("profileImage");
+  if (avatar && profileImage) {
+    profileImage.addEventListener("error", () => {
+      avatar.classList.add("avatar--missing");
+    });
+  }
+
   const io = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {

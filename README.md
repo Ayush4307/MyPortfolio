@@ -11,3 +11,7 @@ Edit these files:
 - `index.html` — content/sections
 - `styles.css` — theme + layout + animations
 - `script.js` — scroll-reveal + footer year
+
+## Add your photo
+- Put your profile image in this folder and name it `Ayush.jpg`
+- Recommended: square image (e.g. 800×800) for best crop
