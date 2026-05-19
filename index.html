@@ -33,11 +33,25 @@
         </a>
 
         <nav class="nav" aria-label="Primary">
-          <a class="nav__link" href="#about">About</a>
-          <a class="nav__link" href="#projects">Projects</a>
-          <a class="nav__link" href="#education">Education</a>
-          <a class="nav__link" href="#links">Links</a>
-          <a class="nav__link nav__link--cta" href="#contact">Contact</a>
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            <span class="nav__toggle-icon" aria-hidden="true"></span>
+            <span class="nav__toggle-text">Menu</span>
+          </button>
+
+          <div class="nav__links" id="navLinks">
+            <a class="nav__link" href="#about">About</a>
+            <a class="nav__link" href="#projects">Projects</a>
+            <a class="nav__link" href="#experience">Experience</a>
+            <a class="nav__link" href="#education">Education</a>
+            <a class="nav__link" href="#links">Links</a>
+            <a class="nav__link nav__link--cta" href="#contact">Contact</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -202,34 +216,92 @@
             <p class="lead">A few things I’ve built and analyzed.</p>
           </div>
 
-          <div class="project-grid" data-reveal data-reveal-delay="70">
-            <article class="project-card">
-              <div class="project-card__head">
-                <h3 class="project-card__title">Telecom Customer Churn Prediction</h3>
-                <div class="project-card__tags" aria-label="Tech stack">
-                  <span class="tag">Python</span>
-                  <span class="tag">XGBoost</span>
-                  <span class="tag">SHAP</span>
-                  <span class="tag">Pandas</span>
-                  <span class="tag">Jupyter</span>
+          <div class="project-grid" id="projectGrid" data-reveal data-reveal-delay="70">
+            <noscript>
+              <article class="project-card">
+                <div class="project-card__head">
+                  <h3 class="project-card__title">Telecom Customer Churn Prediction</h3>
+                  <div class="project-card__tags" aria-label="Tech stack">
+                    <span class="tag">Python</span>
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">SHAP</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Jupyter</span>
+                  </div>
                 </div>
-              </div>
 
-              <p class="project-card__text">
-                Machine learning project to predict customer churn in the telecom sector using XGBoost.
-                Includes preprocessing, feature engineering, model training, and SHAP-based interpretation.
-              </p>
+                <p class="project-card__text">
+                  Machine learning project to predict customer churn in the telecom sector using XGBoost.
+                  Includes preprocessing, feature engineering, model training, and SHAP-based interpretation.
+                </p>
 
-              <div class="project-card__actions">
-                <a class="btn btn--primary" href="https://github.com/Ayush4307/telecom-churn-prediction" target="_blank" rel="noreferrer">
-                  GitHub
-                </a>
-                <a class="btn btn--ghost" href="https://github.com/Ayush4307" target="_blank" rel="noreferrer">
-                  More projects
-                </a>
-              </div>
-            </article>
+                <div class="project-card__actions">
+                  <a class="btn btn--primary" href="https://github.com/Ayush4307/telecom-churn-prediction" target="_blank" rel="noreferrer">
+                    GitHub
+                  </a>
+                  <a class="btn btn--ghost" href="https://github.com/Ayush4307" target="_blank" rel="noreferrer">
+                    More projects
+                  </a>
+                </div>
+              </article>
+            </noscript>
           </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-label="Experience">
+        <div class="container">
+          <div class="section__header" data-reveal>
+            <h2 class="h2">Experience</h2>
+            <p class="lead">Internships and professional work highlights.</p>
+          </div>
+
+          <article class="experience-card" data-reveal data-reveal-delay="70">
+            <div class="experience-card__head">
+              <div>
+                <h3 class="experience-card__title">Software Developer Intern</h3>
+                <div class="experience-card__meta">10-week internship · Full Stack Development</div>
+              </div>
+
+              <a class="experience-card__certificate" href="Full%20Stack%20Certificate.jpg" target="_blank" rel="noreferrer" aria-label="Open internship certificate">
+                <img src="Full Stack Certificate.jpg" alt="Internship certificate" loading="lazy" decoding="async" />
+                <span class="experience-card__certificate-label">View certificate</span>
+              </a>
+            </div>
+
+            <p class="experience-card__text">
+              Worked as a Full Stack Developer Intern where I independently designed, developed, and led the development
+              of a complete full stack web application. Managed both frontend and backend development, integrated
+              databases and APIs, and ensured smooth deployment and functionality throughout the project lifecycle.
+            </p>
+
+            <div class="experience-card__grid">
+              <div>
+                <div class="experience-card__subhead">Key highlights</div>
+                <ul class="experience-card__list">
+                  <li>Led and managed the entire project development independently.</li>
+                  <li>Built responsive and scalable full stack web applications.</li>
+                  <li>Worked on frontend, backend, database integration, and API handling.</li>
+                  <li>Improved problem-solving, debugging, and deployment skills.</li>
+                  <li>Collaborated in a professional development environment and followed modern development practices.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="experience-card__subhead">Technologies used</div>
+                <div class="experience-card__tags" aria-label="Technologies used">
+                  <span class="tag">React</span>
+                  <span class="tag">Next.js</span>
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">GitHub</span>
+                </div>
+
+                <div class="experience-card__subhead">Internship duration</div>
+                <p class="experience-card__text experience-card__text--compact">10 Weeks — Software Developer Internship</p>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -344,8 +416,13 @@
           </div>
 
           <div class="form-wrap" data-reveal data-reveal-delay="90">
-            <h3 class="h3">Connect with me</h3>
-            <p class="lead">Send your contact details and I’ll get back to you.</p>
+            <h3 class="h3">Quick connect</h3>
+            <p class="lead">Share your details — I’ll reply soon.</p>
+
+            <div class="form-quick" aria-label="Quick actions">
+              <button class="btn btn--ghost btn--small" type="button" id="copyEmail">Copy email</button>
+              <p class="form-quick__hint">Opens your mail app on send.</p>
+            </div>
 
             <form class="form" id="connectForm" novalidate>
               <div class="form__row">
@@ -388,7 +465,7 @@
               </label>
 
               <div class="form__actions">
-                <button class="btn btn--primary" type="submit">Send</button>
+                <button class="btn btn--primary" type="submit" id="sendBtn">Send</button>
               </div>
 
               <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>

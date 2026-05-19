@@ -182,6 +182,49 @@ button:focus-visible {
   display: flex;
   gap: 14px;
   align-items: center;
+  position: relative;
+}
+
+.nav__toggle {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+}
+
+.nav__toggle-icon {
+  width: 18px;
+  height: 12px;
+  border-top: 2px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+
+.nav__toggle-icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.nav__toggle-text {
+  font-size: 14px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 14px;
+  align-items: center;
 }
 
 .nav__link {
@@ -299,6 +342,12 @@ button:focus-visible {
 
 .btn--ghost {
   background: rgba(255, 255, 255, 0.05);
+}
+
+.btn--small {
+  padding: 10px 12px;
+  font-size: 13px;
+  border-radius: 12px;
 }
 
 .btn:hover {
@@ -618,8 +667,123 @@ button:focus-visible {
 /* Projects */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 14px;
+}
+
+/* Experience */
+.experience-card {
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: radial-gradient(circle at 20% 20%, rgba(34, 211, 238, 0.14), transparent 55%),
+    radial-gradient(circle at 80% 70%, rgba(124, 58, 237, 0.14), transparent 52%);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.experience-card__head,
+.experience-card__text,
+.experience-card__grid {
+  position: relative;
+}
+
+.experience-card__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.experience-card__title {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.experience-card__meta {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--faint);
+}
+
+.experience-card__certificate {
+  width: 170px;
+  flex: 0 0 auto;
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.18);
+  transition: transform 160ms ease, border-color 200ms ease, background 200ms ease;
+}
+
+.experience-card__certificate:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.24);
+}
+
+.experience-card__certificate img {
+  width: 100%;
+  height: 110px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.experience-card__certificate-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.78);
+  text-align: center;
+}
+
+.experience-card__text {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+  max-width: 85ch;
+}
+
+.experience-card__text--compact {
+  margin-top: 8px;
+}
+
+.experience-card__grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.experience-card__subhead {
+  font-size: 12px;
+  color: var(--faint);
+  margin-bottom: 8px;
+}
+
+.experience-card__list {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.7;
+}
+
+.experience-card__tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .project-card {
@@ -715,6 +879,20 @@ button:focus-visible {
   padding: 18px;
 }
 
+.form-quick {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.form-quick__hint {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 .form {
   margin-top: 14px;
   display: grid;
@@ -799,6 +977,36 @@ button:focus-visible {
 
 /* Responsive */
 @media (max-width: 920px) {
+  .nav__toggle {
+    display: inline-flex;
+  }
+
+  .nav__links {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: min(360px, calc(100vw - 48px));
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    padding: 10px;
+    border-radius: calc(var(--radius) + 2px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(7, 9, 15, 0.86);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow);
+    z-index: 20;
+  }
+
+  .nav.nav--open .nav__links {
+    display: flex;
+  }
+
+  .nav__link {
+    width: 100%;
+  }
+
   .hero__inner {
     grid-template-columns: 1fr;
   }
@@ -813,6 +1021,18 @@ button:focus-visible {
   }
 
   .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card__head {
+    flex-direction: column;
+  }
+
+  .experience-card__certificate {
+    width: min(360px, 100%);
+  }
+
+  .experience-card__grid {
     grid-template-columns: 1fr;
   }
   .cta {
