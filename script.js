@@ -5,13 +5,13 @@
   if (projectGrid) {
     const projects = [
       {
-        title: "Telecom Customer Churn Prediction",
+        title: "IPL Analysis Project",
         description:
-          "Machine learning project to predict customer churn in the telecom sector using XGBoost. Includes preprocessing, feature engineering, model training, and SHAP-based interpretation.",
-        tags: ["Python", "XGBoost", "SHAP", "Pandas", "Jupyter"],
+          "A Python-based IPL analysis project built with data visualization and exploratory analysis using Kaggle's IPL dataset. Focused on finding patterns, player performance, and match insights.",
+        tags: ["Python", "Pandas", "Data Visualization", "Kaggle", "Streamlit"],
         primary: {
-          label: "GitHub",
-          href: "https://github.com/Ayush4307/telecom-churn-prediction",
+          label: "View on GitHub",
+          href: "https://github.com/Ayush4307/Analysis-of-Best-Performing-Players-in-IPL.git",
         },
         secondary: {
           label: "More projects",
