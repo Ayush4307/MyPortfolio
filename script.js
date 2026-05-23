@@ -5,17 +5,31 @@
   if (projectGrid) {
     const projects = [
       {
-        title: "IPL Analysis Project",
+        title: "IPL Player Performance Analyzer",
         description:
-          "A Python-based IPL analysis project built with data visualization and exploratory analysis using Kaggle's IPL dataset. Focused on finding patterns, player performance, and match insights.",
-        tags: ["Python", "Pandas", "Data Visualization", "Kaggle", "Streamlit"],
+          "An interactive Streamlit dashboard for analyzing IPL player and team performances from 2008–2024, with overview metrics, top batsmen and bowlers analysis, season-wise insights, team performance, and player search.",
+        tags: ["Python", "Streamlit", "Pandas", "Plotly", "Kaggle"],
         primary: {
           label: "View on GitHub",
           href: "https://github.com/Ayush4307/Analysis-of-Best-Performing-Players-in-IPL.git",
         },
         secondary: {
-          label: "More projects",
-          href: "https://github.com/Ayush4307",
+          label: "Live demo",
+          href: "https://ipl-player-analyzer.streamlit.app/",
+        },
+      },
+      {
+        title: "Job Tracker",
+        description:
+          "A full-stack job application tracking app built with React, TypeScript, Supabase, and Tailwind CSS. Includes authentication, job management, analytics, search, filters, and row-level security.",
+        tags: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Vercel"],
+        primary: {
+          label: "View on GitHub",
+          href: "https://github.com/Ayush4307/job-tracker.git",
+        },
+        secondary: {
+          label: "Live demo",
+          href: "https://job-tracker-ayush.vercel.app",
         },
       },
     ];
