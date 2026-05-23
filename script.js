@@ -7,7 +7,7 @@
       {
         title: "IPL Player Performance Analyzer",
         description:
-          "An interactive Streamlit dashboard for analyzing IPL player and team performances from 2008–2024, with overview metrics, top batsmen and bowlers analysis, season-wise insights, team performance, and player search.",
+          "An interactive Streamlit dashboard for IPL player and team analysis from 2008–2024. It includes an overview dashboard, top batsmen and bowlers analysis, season-wise trends, team performance insights, player search, and Plotly visualizations.",
         tags: ["Python", "Streamlit", "Pandas", "Plotly", "Kaggle"],
         primary: {
           label: "View on GitHub",
