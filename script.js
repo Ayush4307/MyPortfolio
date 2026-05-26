@@ -5,6 +5,20 @@
   if (projectGrid) {
     const projects = [
       {
+        title: "UniHive",
+        description:
+          "A full-stack college community platform for students to share notes, post events, and report lost and found items in one campus-focused app. Deployed with a Vercel frontend, Render backend, and MongoDB.",
+        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Spring Boot", "MongoDB"],
+        primary: {
+          label: "View on GitHub",
+          href: "https://github.com/Ayush4307/UniHive.git",
+        },
+        secondary: {
+          label: "Live demo",
+          href: "https://unihive-ayush.vercel.app",
+        },
+      },
+      {
         title: "IPL Player Performance Analyzer",
         description:
           "An interactive Streamlit dashboard for IPL player and team analysis from 2008–2024. It includes an overview dashboard, top batsmen and bowlers analysis, season-wise trends, team performance insights, player search, and Plotly visualizations.",
