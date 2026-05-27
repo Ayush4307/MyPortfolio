@@ -23,6 +23,26 @@ MyPortfolio/
 * **Scroll-Reveal System:** Light weight Intersection Observer API driving smooth, native fading animations as sections come into view.
 * **Smart Contact Handling:** Modern dynamic email client loader paired with an instant copy-to-clipboard backup system.
 
+## 🎨 Design System & Customization
+The styling of this portfolio is governed entirely by custom CSS design tokens located under the `:root` scope in `styles.css`. Customize the look easily by changing these values:
+
+```css
+:root {
+  /* Core Theme Colors */
+  --bg:        #0B0F1A;   /* Primary deep slate background */
+  --bg-card:   #141C2E;   /* Elevated slate surface cards */
+  --accent:    #10B981;   /* Emerald core brand color */
+  --blue:      #60A5FA;   /* Soft slate blue highlight */
+
+  /* Gradient Palettes */
+  --grad-accent: linear-gradient(135deg, #10B981, #06B6D4); /* Core gradient accent */
+  --grad-text:   linear-gradient(135deg, #E8EEF4 0%, #94A3B8 100%);
+  
+  /* Transition Timing Curves */
+  --t:         280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+```
+
 ## ⚡ Performance & SEO
 This site was built with performance, usability, and visibility in mind:
 * **HTML5 Semantic Elements:** Used descriptive tags like `<header>`, `<main>`, `<section>`, `<article>`, and `<footer>` for maximum search engine crawl efficiency.
