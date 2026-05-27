@@ -23,6 +23,13 @@ MyPortfolio/
 * **Scroll-Reveal System:** Light weight Intersection Observer API driving smooth, native fading animations as sections come into view.
 * **Smart Contact Handling:** Modern dynamic email client loader paired with an instant copy-to-clipboard backup system.
 
+## ⚡ Performance & SEO
+This site was built with performance, usability, and visibility in mind:
+* **HTML5 Semantic Elements:** Used descriptive tags like `<header>`, `<main>`, `<section>`, `<article>`, and `<footer>` for maximum search engine crawl efficiency.
+* **Accessibility (a11y):** Form fields, nav actions, and interactive buttons feature screen-reader titles, ARIA labels, and `skip-link` support for accessibility.
+* **Optimized Image Decoding:** Active loading optimizations (`decoding="async"`, `loading="eager"` for above-the-fold assets, and `loading="lazy"` for footer assets) ensure stellar Core Web Vitals scores.
+* **SEO Best Practices:** Contains custom metadata descriptions, viewports, and indexing structures ready for quick indexing.
+
 ## Run
 - Open `index.html` directly in your browser, or
 - In VS Code, use a Live Server extension (recommended) and open the generated local URL.
