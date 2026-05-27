@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
 
@@ -57,8 +57,10 @@
     </header>
 
     <main id="main">
-      <section class="hero section" aria-label="Hero">
-        <div class="container hero__inner">
+      <section class="hero" aria-label="Hero">
+        <div class="hero__inner">
+
+          <!-- LEFT: text content -->
           <div class="hero__copy" data-reveal>
             <p class="kicker">Full Stack Developer &amp; Problem Solver</p>
             <h1 class="title title--display">
@@ -66,25 +68,12 @@
               <span class="title__line">Singh Pawar.</span>
             </h1>
 
-            <div class="avatar avatar--hero" id="avatar">
-              <img
-                id="profileImage"
-                src="Ayush.jpg"
-                alt="Ayush Singh Pawar"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-
             <p class="subtitle">
               I build sophisticated, scalable web applications with a focus on seamless user experiences,
-              modern backend architectures, and elegant problem-solving. Currently pursuing B.Tech in CSE at
-              Galgotias University, I work across full-stack development, AI-powered solutions, and modern
-              software systems.
+              modern backend architectures, and elegant problem-solving.
             </p>
 
             <div class="specializations" aria-label="Specializations">
-              <div class="specializations__title">Specializations</div>
               <div class="specializations__list">
                 <span class="chip">Web Development</span>
                 <span class="chip">App Development</span>
@@ -95,47 +84,24 @@
             </div>
 
             <div class="hero__actions">
-              <a class="btn btn--primary" href="#projects">View work</a>
+              <a class="btn btn--primary" href="#projects">View Work</a>
               <a class="btn btn--ghost" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
             </div>
           </div>
 
-          <div class="hero__card" data-reveal data-reveal-delay="120">
-            <div class="card">
-              <div class="card__top">
-                <div class="badge">Open to opportunities</div>
-                <div class="pulse" aria-hidden="true"></div>
-              </div>
-
-              <div class="card__content">
-                <div class="stat">
-                  <div class="stat__label">Email</div>
-                  <a class="stat__value" href="mailto:singhayush4307@gmail.com">singhayush4307@gmail.com</a>
-                </div>
-
-                <div class="stat">
-                  <div class="stat__label">LinkedIn</div>
-                  <a class="stat__value" href="https://www.linkedin.com/in/ayush4307" target="_blank" rel="noreferrer">linkedin.com/in/ayush4307</a>
-                </div>
-
-                <div class="stat">
-                  <div class="stat__label">GitHub</div>
-                  <a class="stat__value" href="https://github.com/Ayush4307" target="_blank" rel="noreferrer">github.com/Ayush4307</a>
-                </div>
-
-                <div class="divider" role="separator"></div>
-
-                <div class="mini">
-                  <div class="mini__title">Quick profile</div>
-                  <ul class="mini__list">
-                    <li>Galgotias University</li>
-                    <li>B.Tech · Computer Science</li>
-                    <li>Full Stack Development</li>
-                  </ul>
-                </div>
-              </div>
+          <!-- RIGHT: styled photo card -->
+          <div class="hero__photo" data-reveal data-reveal-delay="120">
+            <div class="hero__photo-frame">
+              <img
+                src="Ayush.jpg"
+                alt="Ayush Singh Pawar"
+                loading="eager"
+                decoding="async"
+              />
             </div>
           </div>
+
+        </div>
         </div>
 
         <div class="container marquee" aria-hidden="true">
