@@ -50,6 +50,25 @@ This site was built with performance, usability, and visibility in mind:
 * **Optimized Image Decoding:** Active loading optimizations (`decoding="async"`, `loading="eager"` for above-the-fold assets, and `loading="lazy"` for footer assets) ensure stellar Core Web Vitals scores.
 * **SEO Best Practices:** Contains custom metadata descriptions, viewports, and indexing structures ready for quick indexing.
 
+## 🚀 Deployment Guide
+You can deploy this portfolio to production within minutes using these platforms:
+
+### 1. Vercel (Recommended)
+1. Sign up on [Vercel](https://vercel.com).
+2. Connect your GitHub account.
+3. Import this `MyPortfolio` repository.
+4. Keep the default settings and click **Deploy**. Vercel will host it for free and configure SSL automatically.
+
+### 2. GitHub Pages
+1. Go to your repository settings on GitHub.
+2. Navigate to **Pages** in the left menu.
+3. Under **Build and deployment**, select `Deploy from a branch`.
+4. Choose the `main` branch and root `/` folder, then click **Save**.
+
+### 3. Netlify
+1. Log in to [Netlify](https://netlify.com).
+2. Drag and drop the `MyPortfolio` project folder directly into the Netlify Web App dashboard for instant deployment, or connect GitHub for automated Git-backed builds.
+
 ## Run
 - Open `index.html` directly in your browser, or
 - In VS Code, use a Live Server extension (recommended) and open the generated local URL.
